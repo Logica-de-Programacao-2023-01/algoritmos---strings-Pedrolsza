@@ -1,0 +1,12 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	String := "pedro"
+	fmt.Println("pedro")
+	fmt.Println(strings.ToUpper(String))
+}
