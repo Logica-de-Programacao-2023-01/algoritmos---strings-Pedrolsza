@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+	var s, s1 string
+	fmt.Println("escreva uma frase: ")
+	fmt.Scan(&s)
+	fmt.Println("escreva outra frase:")
+	fmt.Scan(&s1)
+	if s == s1 {
+		fmt.Println("suas frases são iguais.")
+	} else {
+		fmt.Println("suas frases são diferentes")
+	}
+}
