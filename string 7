@@ -1,0 +1,25 @@
+package main
+
+import (
+	"fmt"
+	"unicode"
+)
+
+func main() {
+	var n string
+	isnumber := false
+	fmt.Println("declara sua string: ")
+	fmt.Scan(&n)
+	for _, a := range n {
+
+		if unicode.IsDigit(a) {
+			isnumber = true
+			break
+		}
+	}
+	if isnumber {
+		fmt.Println("a string contem num!")
+	} else {
+		fmt.Println("a string não contem numero")
+	}
+}
