@@ -1,0 +1,15 @@
+def remover_vogais(string):
+    vogais = "aeiouAEIOU"
+    string_sem_vogais = ""
+
+    for char in string:
+        if char not in vogais:
+            string_sem_vogais += char
+
+    return string_sem_vogais
+
+string = input("Digite uma string: ")
+
+resultado = remover_vogais(string)
+
+print("String resultante:", resultado)
