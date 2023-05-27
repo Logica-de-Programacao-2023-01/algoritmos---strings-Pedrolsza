@@ -1,0 +1,9 @@
+def substituir_letra(string, letra_antiga, letra_nova):
+    return string.replace(letra_antiga, letra_nova)
+
+entrada = input("Digite uma string: ")
+letra_antiga = input("Digite a letra a ser substituída: ")
+letra_nova = input("Digite a letra de substituição: ")
+
+resultado = substituir_letra(entrada, letra_antiga, letra_nova)
+print("Resultado: ", resultado)
