@@ -1,0 +1,19 @@
+def eh_sequencia_crescente(string):
+    if not string:
+        return False
+
+    if not string.isdigit():
+        return False
+
+    for i in range(len(string) - 1):
+        if int(string[i]) >= int(string[i + 1]):
+            return False
+
+    return True
+
+string = input("Digite uma string: ")
+
+if eh_sequencia_crescente(string):
+    print("A string é uma sequência numérica crescente.")
+else:
+    print("A string não é uma sequência numérica crescente.")
