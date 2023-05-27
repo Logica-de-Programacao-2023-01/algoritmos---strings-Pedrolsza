@@ -1,0 +1,12 @@
+def verifica_substring(string1, string2):
+    if string2 in string1:
+        return True
+    else:
+        return False
+string1 = input("Digite a primeira string: ")
+string2 = input("Digite a segunda string: ")
+
+if verifica_substring(string1, string2):
+    print("A segunda string é uma substring da primeira.")
+else:
+    print("A segunda string não é uma substring da primeira.")
