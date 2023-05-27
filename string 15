@@ -1,0 +1,17 @@
+def substituir_vogais_por_asterisco(string):
+    vogais = "aeiouAEIOU"
+    string_modificada = ""
+
+    for char in string:
+        if char in vogais:
+            string_modificada += "*"
+        else:
+            string_modificada += char
+
+    return string_modificada
+
+string = input("Digite uma string: ")
+
+resultado = substituir_vogais_por_asterisco(string)
+
+print("String resultante:", resultado)
