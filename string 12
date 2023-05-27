@@ -1,0 +1,11 @@
+def eh_palindromo(string):
+    string = string.replace(" ", "").lower()
+    if string == string[::-1]:
+        return True
+    else:
+        return False
+string = input("Digite uma string: ")
+if eh_palindromo(string):
+    print("A string é um palíndromo.")
+else:
+    print("A string não é um palíndromo.")
