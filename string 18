@@ -1,0 +1,12 @@
+def contem_apenas_numeros(string):
+    if string.isdigit():
+        return True
+    else:
+        return False
+
+string = input("Digite uma string: ")
+
+if contem_apenas_numeros(string):
+    print("A string contém apenas números.")
+else:
+    print("A string não contém apenas números.")
