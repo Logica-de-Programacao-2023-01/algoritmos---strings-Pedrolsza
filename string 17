@@ -1,0 +1,18 @@
+def letras_unicas(string):
+    letras = {}
+    letras_unicas = ""
+
+    for char in string:
+        letras[char] = letras.get(char, 0) + 1
+
+    for char in string:
+        if letras[char] == 1:
+            letras_unicas += char
+
+    return letras_unicas
+
+string = input("Digite uma string: ")
+
+resultado = letras_unicas(string)
+
+print("Letras únicas na string:", resultado)
