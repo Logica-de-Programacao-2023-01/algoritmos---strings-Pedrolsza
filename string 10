@@ -1,0 +1,18 @@
+def sao_anagramas(string1, string2):
+    string1 = string1.replace(" ", "").lower()
+    string2 = string2.replace(" ", "").lower()
+    if len(string1) != len(string2):
+        return False
+    contagem1 = {}
+    contagem2 = {}
+    for char in string1:
+        contagem1[char] = contagem1.get(char, 0) + 1
+    for char in string2:
+        contagem2[char] = contagem2.get(char, 0) + 1
+    return contagem1 == contagem2
+string1 = input("Digite a primeira string: ")
+string2 = input("Digite a segunda string: ")
+if sao_anagramas(string1, string2):
+    print("As strings são anagramas.")
+else:
+    print("As strings não são anagramas.")
