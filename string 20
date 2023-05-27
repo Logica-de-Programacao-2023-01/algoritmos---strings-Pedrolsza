@@ -1,0 +1,20 @@
+def verifica_camel_case(string):
+    palavras = 1
+
+    if not string[0].isupper():
+        return False, palavras
+
+    for i in range(1, len(string)):
+        if string[i].isupper():
+            palavras += 1
+
+    return True, palavras
+
+string = input("Digite uma string: ")
+
+camel_case, num_palavras = verifica_camel_case(string)
+
+if camel_case:
+    print("A string está em camelCase e possui", num_palavras, "palavras.")
+else:
+    print("A string não está em camelCase.")
